@@ -15,7 +15,7 @@ p {
   line-height: 1.5;
 }
 
-header {
+.cabeca {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,7 +38,7 @@ header {
   transition: 0.5s;
 }
 
-.menu-conteudo {
+.menu_conteudo {
   position: relative;
   top: 25%;
   width: 100%;
@@ -47,7 +47,7 @@ header {
   font-size: 36px;
 }
 
-.menu-item {
+.menu_item {
   text-decoration: none;
   color: #9003c4;
   font-family: Arial, Helvetica, sans-serif;
@@ -55,11 +55,7 @@ header {
   margin: 0 0.5vw;
 }
 
-a {
-  text-decoration: none;
-}
-
-.menu a {
+.menu_link {
   padding: 8px;
   text-decoration: none;
   color: #818181;
@@ -67,35 +63,35 @@ a {
   transition: 0.3s;
 }
 
-.menu a:hover,
-.menu a:focus {
+.menu_item:hover,
+.menu_item:focus {
   color: #f1f1f1;
 }
 
-.menu #closebtn {
+.closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
 }
 
-span {
+.openbtn {
   color: #9003c4;
   font-size: 2em;
   cursor: pointer;
 }
 
-main {
+.principal {
   margin: auto;
 }
 
-.principal-item {
+.principal_secao {
   text-align: center;
   padding-top: 80px;
   max-width: 800px;
 }
 
-.servicos-item {
+.servicos_item {
   margin: 10px;
   border-left: 5px solid #9003c4;
   border-radius: 8px;
@@ -105,7 +101,7 @@ main {
   box-sizing: border-box;
 }
 
-.principal-item h2 {
+.principal_h2 {
   color: #9003c4;
   margin-bottom: 30px;
 }
@@ -114,13 +110,13 @@ h3 {
   color: #9003c4;
 }
 
-.principal-item p {
+.principal_text {
   font-size: 1em;
   text-align: justify;
   padding: 15px 15px;
 }
 
-.principal-item img {
+.principal_img {
   width: 80%;
   padding: 30px 10px;
 }
@@ -128,10 +124,6 @@ h3 {
 .destacar {
   font-size: 1em;
   font-weight: 900;
-  color: #9003c4;
-}
-
-.destacar a {
   color: #9003c4;
 }
 
@@ -151,7 +143,7 @@ h3 {
   justify-content: center;
 }
 
-#depoimentos img {
+.foto {
   width: 30%;
 }
 
@@ -172,7 +164,7 @@ h3 {
   color: #7800a3;
 }
 
-#btn {
+.contato_btn {
   padding: 5px 15px;
   text-align: center;
   border-radius: 5px;
@@ -180,7 +172,7 @@ h3 {
   background-color: #fcecff;
 }
 
-#btn:hover {
+.contato_btn:hover {
   background-color: #7800a3;
   color: #fdf6ff;
 }
@@ -197,17 +189,13 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
-  #myNav {
-    width: 70%;
-  }
-
   .menu {
+    width: 50%;
     background: none;
-    width: 100%;
     position: relative;
   }
 
-  .menu-conteudo {
+  .menu_conteudo {
     display: flex;
     top: 0;
     margin-top: 0;
@@ -219,19 +207,25 @@ footer {
     color: #9003c4;
   }
 
-  #hamburguer {
+  .openbtn {
     display: none;
   }
 
-  #closebtn {
+  .closebtn {
     display: none;
   }
 
-  .principal-item {
+  .principal_secao {
     padding-top: 110px;
   }
 
-  #depoimentos img {
+  .foto {
     width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .menu {
+    width: 45%;
   }
 }
